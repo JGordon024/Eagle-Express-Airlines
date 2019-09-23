@@ -38,11 +38,81 @@ nav {
 .logo-img>img {
     height: 100%;
 }
-
-ul>li {
-    width: 100%;
-    list-style: none;
+.links ul{
     margin: 0;
-    justify-content: center;
-    margin-bottom: 2px;
+    padding: 0;
+    display: flex;
 }
+
+.links li {
+    list-style: none;
+}
+
+.links li a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #000000;
+    font-size: 1.1em;
+}
+
+.links li:hover{
+    background-color: rgb(0, 128, 255);
+}
+
+.toggle-button{
+    position: absolute;
+    right: 1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+@media (max-width: 1150px){
+    .logo{
+        font-size: .8em;
+    }
+}
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        }
+    .logo{
+        font-size: .7em;
+    }
+    .logo-img {
+        height: 60px;
+    }
+    .links{
+        width: 100%;
+        display: none;
+    }
+    .links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .links li{
+        text-align: center;
+    }
+
+    .links li a{
+        padding: .5em 1em;
+    }
+
+    .links:active{
+display: flex;
+    }
+    .toggle-button{
+        display: flex;
+    }
+}
+
