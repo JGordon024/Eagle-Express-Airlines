@@ -57,6 +57,7 @@ width: 60px;
     text-align: center;
     font-weight:600;
 }
+
 @media screen and (min-width: 400px){
     .logo-hero h1{
         font-size: 1.5em;
@@ -100,7 +101,7 @@ width: 60px;
 }
 
 /* Button styles */
-.buttons{
+.button-container{
 margin-top: 10px;
 width: 100%;
 display: flex;
@@ -108,10 +109,29 @@ justify-content: center;
 flex-direction: column;
 }
 
+
 button{
     margin: 10px;
     padding: 10px;
     font-size: 1em;
     background: rgba(27, 180, 207, 0.5);
     border: none;
+}
+
+@media screen and (min-width: 400px){
+.button-container{
+    flex-direction: row
+}
+    button{
+    font-size: 1.2em;
+    max-width: 250px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.login{
+    width: 50%;
+}
+.tickets{
+    width: 50%;
+}
 }
