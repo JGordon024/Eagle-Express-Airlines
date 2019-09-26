@@ -135,3 +135,16 @@ button{
     width: 50%;
 }
 }
+
+/* Down Arrow Styles */
+.fa-arrow-down{
+    font-size: 40px;
+    background: rgb(2, 130, 216);
+    border-radius: 50%;
+}
+
+.down h3{
+font-size: 1em;
+}
+.down{
+    }
